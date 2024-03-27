@@ -1,0 +1,36 @@
+class Books():
+    pass
+
+###################
+class Native(Books):
+    Look = "Soft leather cover"
+
+class Foreign(Books):
+    Look = "Solid Leather cover"
+
+class Science(Books):
+    Look = "Solid paper cover"
+
+class Art(Books):
+    Look = "Soft paper cover"
+
+##################
+
+class Villa(Native, Art):
+    pass
+
+class NativeScience(Native, Science):
+    pass
+
+class ForeignArt(Art, Foreign):
+    pass
+
+class ScinceFiction(Science, Art):
+    pass
+
+class ForeignScinceFiction(ScinceFiction, Foreign):
+    pass
+
+##################
+print (ForeignScinceFiction.Look)
+print (NativeScience.Look)
